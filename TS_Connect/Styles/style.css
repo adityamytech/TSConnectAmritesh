@@ -1,0 +1,249 @@
+﻿
+.head-style{
+    font-weight:bolder;
+    font-size:30px;
+}
+.buttons
+{
+    margin-left:0%;
+    text-align:left;
+    margin-top:2%;
+}
+
+.UserData
+{   
+    text-align:left;
+    border-radius:20px;
+    background:white;
+    height:45px;
+    margin-left:5%;
+    margin-right:50%;
+    padding-top:1%;  
+    margin-bottom:1%;
+    width:75%;
+}
+
+.pad
+{
+    border: none;
+    margin-bottom:5px;
+    outline: none;
+    width:140px;
+}
+
+
+.formSignInSingnUp
+{
+    display: block;
+    text-align:left;
+    align-items:flex-start;
+    margin-left:40px;
+    margin-top:50px;
+   /*background-color:lightblue;
+    /*image don't scroll with itself'*/
+    background-size: 100% 100%;
+     height: 100%;
+    width: 100%;
+    /*margin-top:10%;*/
+    /*margin-bottom: -10;*/
+}
+
+.relative{position:relative;}                
+.appointment{position:absolute;}
+input, textarea{padding-left:50px;}
+ 
+header{
+    height:100px;
+    width:100%;
+    background-color:black;
+}
+.logo{
+     height:100px;
+    width:100px;
+}
+
+.background{
+    background-size:100%;
+    height:100%;
+    width:100%;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+    border:1px solid #000;
+}
+header{
+    color:white;
+    font-size:xx-large;
+}
+.formSignIn {
+    display: block;
+    margin-top: 5%;
+    height:50px;
+}
+.SignInData{
+    border-radius:20px;
+    background:white;
+    height:60px;
+    padding-top:1%;  
+    margin-bottom:1%;
+
+}
+footer{
+    position:fixed;
+    bottom:0px;
+    overflow:hidden;
+    height:80px;
+    width:100%;
+    background-color:black;
+}
+.homepageSize{
+    font-size:20px;
+    color: #ffffff;
+    font-family:'Times New Roman';
+    padding-left:50px;
+    background-color:#ffa31a;
+    margin-top:0;
+    border:none;
+}
+.div-pad{
+    padding-left:30px;
+     color: #ffffff;
+}
+#sidebar {
+            position: fixed;
+            width: 200px;
+            height: 78%;
+            top:130px;
+            z-index: 1;
+            margin-right: 100px;
+            background-color: white;
+            left: -200px;
+            transition: all 0.3s linear;
+        }
+        #sidebar.active {
+            left: 0px;
+        }
+        #sidebar .toggle-btn {
+            position: absolute;
+            left: 150px;
+            top: 20px;
+        }
+        #sidebar .toggle-btn span {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background:black;
+            margin: 3px 0px;
+            margin-left:53px;
+        }
+#List{
+    margin-top:200px;
+    font-size:15px;
+}
+.profile-style{
+    margin-top:30px;
+    height:200px;
+    width:200px;
+}
+
+.formAdd{
+     display: block;
+     align-items:center;
+     align-content:center;
+     margin-left:40px;
+     margin-top:50px;
+    /*image don't scroll with itself'*/
+    background-size: 100% 100%;
+     height: 100%;
+    width: 100%;
+}
+.ResourceData{
+    border-radius:20px;
+    background:white;
+    height:45px;
+    margin-left:10%;
+    margin-right:25%;
+    padding-top:2%;  
+    margin-bottom:2%;
+}
+/*.skillTable{
+    margin-left:40%;
+}*/
+.table-style{
+    margin-left:10%;
+     margin-top:50px;
+    width:700px;
+height:200px;
+font-size:small;
+}
+.ResourceList {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+    display: block;
+    grid-cell: none;
+}
+.column-head{
+    background-color: black;
+    color:white;
+    font-size:small;
+    text-align:center;
+}
+.column-item{
+    margin-top:50px;
+    width:1000px;
+height:200px;
+font-size:small;
+text-align:center;
+margin-left:10%;
+}
+.log-out{
+float:right;
+margin-right:10%;
+}
+.log-out1{
+    margin-left:1100px;
+    margin-right:0;
+}
+.grdApprovalList{
+    border-collapse: collapse;
+    display: block;
+    grid-cell: none;
+    margin-top: 100px;
+    /*margin-right:25%;*/
+    margin-left:25%;
+}
+.section {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    bottom:0;
+    background-color: lightgreen;
+    background-size:cover;
+    position:relative;
+    animation: slider 10s infinite;
+    opacity:0.7;
+}
+
+@keyframes slider{
+  
+    0%{
+        background-color:mediumpurple;
+    }
+    50% {
+        background-color:pink;
+    }
+    100% {
+       background-color:lightgreen;
+    }
+}
+.updatestatus{
+    margin-top:10px;
+    text-align:center;
+    color:#33CC33;
+    font-size:larger;
+}
+.scheduleBtn{
+   margin-left:57%;
+}

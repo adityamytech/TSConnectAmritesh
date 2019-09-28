@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TS_MasterPage.master.cs" Inherits="TS_Connect.TS_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Styles/style.css" rel="stylesheet" />
+    <%--<link href="Content/bootstrap.css" rel="stylesheet" />--%>
+   <%-- <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      
+     <header><img class="logo" src="Images/logo.png" />TS_CONNECT
+
+
+     </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+        </asp:ContentPlaceHolder>
+    </div>
+     <footer></footer>
+</body>    
+</html>

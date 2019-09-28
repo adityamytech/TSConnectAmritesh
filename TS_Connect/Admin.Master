@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="TS_Connect.Admin" Debug="true" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+     <script>
+        var slideIndex = 0;
+       showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 0; }
+            else {
+                slides[slideIndex - 1].style.display = "block";
+            }
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header><img class="logo" src="Images/logo.png" />TS_CONNECT</header>
+  <div class="homepageSize navbar navbar-expand-lg navbar-light">
+      <div class="div-pad nav-item font-weight-bold">
+    <asp:HyperLink runat="server" ID="Home" Text="Home" NavigateUrl="~/HomePageAdmin.aspx" ForeColor="Black"></asp:HyperLink>
+      </div>
+      <div class="div-pad nav-item font-weight-bold">
+          <asp:HyperLink runat="server" ID="AddResource" Text="Add Resource" NavigateUrl="~/AddResources.aspx" ForeColor="Black"></asp:HyperLink>
+      </div>
+      <div class=" div-pad nav-item font-weight-bold">
+          <asp:HyperLink runat="server" ID="ResourceList" Text="Resource List" NavigateUrl="~/ResourceList.aspx" ForeColor="Black"></asp:HyperLink>
+      </div> 
+      <div class="div-pad nav-item font-weight-bold">
+          <asp:HyperLink runat="server" ID="AddSkills" Text="Add Skills" NavigateUrl="~/AddSkills.aspx" ForeColor="Black"></asp:HyperLink>
+  </div>
+      <div class="log-out1">
+       <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" ForeColor="Black" Font-Size="X-Large"><i class="fa fa-power-off"></i></asp:LinkButton>
+      </div> 
+      </div> 
+       <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+         <span></span>
+         <span></span>
+         <span></span>
+     </div>
+           <asp:Image class="rounded-circle profile-style" ID="profileImage" runat="server"/> 
+           <br />        
+             <ul id="List">
+                 <li><asp:Label runat="server" ID="adminName"></asp:Label></li>
+                 <li>Password Recovery</li>
+                 <li>Delete Account</li>
+                 <li>Logout</li>
+             </ul>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <footer></footer>
+</body>
+</html>
